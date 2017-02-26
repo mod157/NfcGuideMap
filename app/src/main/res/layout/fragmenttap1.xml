@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <Button
+            android:text="태그 하기"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEnroll"
+            android:background="@drawable/btn_long_red"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:text="삭제 하기"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnrefresh"
+            android:background="@drawable/btn_long_blue"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:text="태그 찾기"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTagSearch"
+            android:background="@drawable/btn_long_org"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="@android:color/background_dark"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:text="나가기"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnList"
+            android:background="@drawable/btn_long_green"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

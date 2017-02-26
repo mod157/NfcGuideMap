@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libDaumMapEngineApi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/libDaumMapEngineApi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

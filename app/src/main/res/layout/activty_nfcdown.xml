@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/baselayout_w">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="＜ back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPointback"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="casual"
+                android:background="@drawable/baselayout_w"
+                android:layout_marginTop="0dp"
+                android:paddingTop="5dp"
+                android:padding="5dp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/map"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/imageDownImage" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frameMapView"></LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:layout_gravity="bottom">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/downrecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom">><Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnIconSelect"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        tools:layout_height="match_parent"
+                        android:background="@drawable/shape_button_finish"
+                        android:textSize="20dp"
+                        android:text="검색"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:text="위치"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnlocationSelect"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_button_finish"
+                        android:textSize="20dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+</LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="@drawable/baselayout_w">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="push"
+            android:text="갤러리 호출"
+            android:background="@drawable/shape_button"
+            android:textColor="@android:color/background_dark"
+			android:layout_weight="1" />
+
+		<Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="takePicture"
+        android:text="다음 지도 사용"
+        android:background="@drawable/shape_button"
+        android:textColor="@android:color/background_dark"
+			android:layout_weight="1"
+			android:id="@+id/btnMapView" />
+
+	</LinearLayout>
+
+	<ImageView android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:scaleType="fitCenter"
+android:id="@+id/imageView"
+        android:layout_weight="1" />
+
+	<Button
+		android:text="확인"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/btnMapOk"
+		android:background="@drawable/shape_button_finish"
+		android:textSize="20dp" />
+
+</LinearLayout>

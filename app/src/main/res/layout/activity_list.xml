@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="다운"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDownV"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_button"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ListDownV"
+        android:background="@drawable/baselayout_w" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/ListEnrollV"
+        android:background="@drawable/baselayout_w" />
+
+</LinearLayout>
